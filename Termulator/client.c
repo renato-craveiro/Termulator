@@ -1,6 +1,8 @@
 #include "termulator.h"
 
 /**
+ * CLIENT SIDE
+ * 
  * Todo o programa está adaptado e tem variadíssimos bugs, pelo que não devem ser considerados erros de escrita,
  * confirmação de erros de leitura/abertura de pipes ou ficheiros e alguns outros bugs.
  * 
