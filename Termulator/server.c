@@ -50,7 +50,7 @@ int execComand(char *prog);
 
 
 
-int main(int argc, char*agrv[]){
+int main(int argc, char*argv[]){
     running=1; //em exec.
 
     //Not sure se os handlers se fazem assim mas resulta
@@ -75,6 +75,11 @@ int main(int argc, char*agrv[]){
     }
     if(argc>2){
         printf("Too many arguments!\n");
+        exit(-1);
+    }
+
+    if(strcmp(argv[1],"admin")){ //meti esta password literalmente para usar o argv
+        printf("Password de admin errada (ganda trolada)!\n");
         exit(-1);
     }
 
