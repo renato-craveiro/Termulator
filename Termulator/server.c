@@ -67,7 +67,7 @@ int main(int argc, char*agrv[]){
     sigaction(SIGINT,  &actSair, 0); 
     sigaction(SIGALRM, &actReminder, 0);
 
-    alarm(10);
+    alarm(11);//alterei para 11 para apresentar de 10 em 10 segundos
 
     if(argc<2){
         printf("Admin missing!\n");
@@ -171,7 +171,7 @@ void reminder(){
     fdr=open(CLTFIFO, O_WRONLY);
     write(fdr, &rsp , sizeof(rsp));
     close(fdr);
-    alarm(10);
+    alarm(11); //alterei para 11 para apresentar de 10 em 10 segundos
 }
 
 int execComand(char *prog){
